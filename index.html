@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Kuis 2 - Bootsrap & JQuery</title>
+  </head>
+  <body>
+    <div>
+      <!-- Preload -->
+      <div class="loader">
+        <div class="spinner-wrapper">
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+              style="width: 100%"
+            ></div>
+          </div>
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Home Page -->
+      <div class="main">
+        <div class="p-3 bg-primary text-white text-center">
+          <h1 id="judul_utama">Web Portofolio</h1>
+          <p>Perkenalkan nama saya, <mark>Rafael Deandra</mark></p>
+        </div>
+        <nav
+          class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center text-center"
+        >
+          <ul class="navbar-nav text-white">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">PROFILE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pengalaman">PENGALAMAN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#find-me">FIND ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">ASK</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5>
+                <img
+                  src="img/IMG_2668.JPG"
+                  alt=""
+                  style="width: 200px; margin-top: 15px"
+                  class="d-flex mx-auto rounded"
+                />
+                <p style="font-size: 12px; text-align: center">
+                  Foto diambil saat Job Fair UKSW 42
+                </p>
+              </h5>
+              <h2 class="text-center" style="margin-top: 30px">
+                Kartu Studi Tetap
+              </h2>
+              <p class="text-center">Semester 5 2022/2023</p>
+              <ul class="nav nav-pills flex-column" id="Link">
+                <li class="nav-item d-flex justify-content-center" id="KST">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1"
+                  >
+                    Rafael Deandra
+                  </button>
+                  <div class="modal fade" id="modal1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">KST</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                          ></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <div class="row text-center">
+                            <div class="col md-1">Jam</div>
+                            <div class="col md-1">Ruang</div>
+                            <div class="col md-1">Kode</div>
+                            <div class="col md-3">Mata Kuliah</div>
+                            <div class="col md-1">SKS A</div>
+                            <div class="col md-1">SKS B</div>
+                            <div class="col md-1">B/U/P</div>
+                            <div class="col md-3">Pengajar</div>
+                          </div>
+                          <div class="row">
+                            <dt><em>SENIN</em></dt>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">11-13</div>
+                            <div class="col md-1">FTI306</div>
+                            <div class="col md-1">TC225G</div>
+                            <div class="col md-3">SISTEM OPERASI</div>
+                            <div class="col md-1">3</div>
+                            <div class="col md-1">4</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">RIKO YUDISTIRA</div>
+                          </div>
+                          <div class="row">
+                            <dt><em>SELASA</em></dt>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">11-13</div>
+                            <div class="col md-1">FTI331</div>
+                            <div class="col md-1">TC221E</div>
+                            <div class="col md-3">
+                              STATISTIKA DAN PROBABILITAS
+                            </div>
+                            <div class="col md-1">2</div>
+                            <div class="col md-1">2</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">ERYKA PANDU EKALIA D.</div>
+                          </div>
+                          <div class="row">
+                            <dt><em>RABU</em></dt>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">07-09</div>
+                            <div class="col md-1">FTI455</div>
+                            <div class="col md-1">TC010G</div>
+                            <div class="col md-3">AST SISTEM OPERASI</div>
+                            <div class="col md-1">0</div>
+                            <div class="col md-1">0</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">ASISTEN 9</div>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">11-13</div>
+                            <div class="col md-1">FTI308</div>
+                            <div class="col md-1">TC009F</div>
+                            <div class="col md-3">AST KECERDASAN BUATAN</div>
+                            <div class="col md-1">0</div>
+                            <div class="col md-1">0</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">ASISTEN 8</div>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">13-16</div>
+                            <div class="col md-1">FTI467</div>
+                            <div class="col md-1">TC223G</div>
+                            <div class="col md-3">PEMROGRAMAN WEB</div>
+                            <div class="col md-1">3</div>
+                            <div class="col md-1">4</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">RAYNALDO</div>
+                          </div>
+                          <div class="row">
+                            <dt><em>KAMIS</em></dt>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">07-09</div>
+                            <div class="col md-1">FTI333</div>
+                            <div class="col md-1">TC224F</div>
+                            <div class="col md-3">KECERDASAN BUATAN</div>
+                            <div class="col md-1">3</div>
+                            <div class="col md-1">4</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">EVANGS MAILOA</div>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">13-15</div>
+                            <div class="col md-1">FTI306</div>
+                            <div class="col md-1">IN122G</div>
+                            <div class="col md-3">PENDIDIKAN PANCASILA</div>
+                            <div class="col md-1">2</div>
+                            <div class="col md-1">2</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">YULIA TRI WAHYUNI</div>
+                          </div>
+                          <div class="row">
+                            <dt><em>SABTU</em></dt>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">11-13</div>
+                            <div class="col md-1">F204</div>
+                            <div class="col md-1">TC222G</div>
+                            <div class="col md-3">ETIKA PROFESI</div>
+                            <div class="col md-1">2</div>
+                            <div class="col md-1">2</div>
+                            <div class="col md-1">B</div>
+                            <div class="col md-3">ROLAND TUMBELAKA PALAR</div>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col md-1">Total</div>
+                            <div class="col md-1"></div>
+                            <div class="col md-1"></div>
+                            <div class="col md-3"></div>
+                            <div class="col md-1">15</div>
+                            <div class="col md-1">18</div>
+                            <div class="col md-1"></div>
+                            <div class="col md-3"></div>
+                          </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <hr class="d-sm-none" />
+            </div>
+
+            <div class="col-sm-8">
+              <h2 style="margin-top: 5px" id="profile">
+                <dt>Tentang Saya</dt>
+              </h2>
+              <h5>Perkenalan singkat,</h5>
+              <!-- Isi Profile-->
+              <p class="teks-tulisan">
+                Halo, perkenalkan nama saya Rafael Deandra atau biasa dipanggil
+                Rafa. Saya lahir dan besar di Salatiga, dan memang sejak dulu
+                sudah menyukai hal-hal terkait Komputer apalagi game online dan
+                E-Sport. Sehingga di perkuliahan ini saya memutuskan untuk
+                mengambil Teknik Informatika di UKSW.
+              </p>
+              <p class="teks-tulisan">
+                Dan sejauh ini saya masih menikmati berkuliah di jurusan Teknik
+                Informatika (meskipun kebanyakan laki-laki). Karena di kuliah
+                ini saya lebih sering tertantang untuk memecahkan berbagai macam
+                problem mengenai coding, meskipun tidak jarang saya merasa lelah
+                karena tidak menemukan penyelesaiannya.
+              </p>
+              <h2 style="margin-top: 5px" id="pengalaman">
+                <dt>Pengalaman</dt>
+              </h2>
+              <h5>
+                1st Runner Up Pekan Olahraga Mahasiswa UKSW Cabang Valorant
+              </h5>
+              <img src="img/DSC06039.JPG" height="375" width="666" />
+              <p class="teks-tulisan">
+                Pekan Olahraga Mahasiswa (POM) adalah acara tahunan yang
+                diadakan oleh mahasiswa UKSW. Dalam POM terdapat banyak cabang
+                olahraga yang dilombakan. Untuk E-Sport POM terbuka untuk umum,
+                dan tim saya berhasil mendapatkan juara 2 pada POM terakhir.
+              </p>
+              <h5>Panitia Job Fair 42 UKSW</h5>
+              <img src="img/IMG_2833.JPG" height="444" width="666" />
+              <p class="teks-tulisan">
+                Job Fair adalah acara yang diadakan oleh UKSW untuk membantu
+                para pencari kerja baik itu mahasiswa atau masyarakat umum
+                lainnya. Acara ini dihadiri oleh banyak perusahaan yang mencari
+                pekerja, dan pada tahun ini saya menjadi panitia yaitu dibagian
+                dokumentasi acara.
+              </p>
+              <h5>
+                Storyboard Maker pada Catatan Akhir Sekolah SMA Negeri 1
+                Salatiga
+              </h5>
+              <img
+                src="img/Untitled190_20210702125230.jpg"
+                height="374"
+                width="666"
+              />
+              <p>
+                Film Catatan Akhir Sekolah juga merupakan agenda tahunan yang
+                dimaksudkan sebagai persembahan terakhir untuk angkatan yang
+                akan lulus dan sebagai kenang-kenangan angkatan tersebut dari
+                mereka mulai menginjakkan kaki di SMAN 1 Salatiga hingga
+                menjelang kelulusan mereka.
+              </p>
+              <h2 style="margin-top: 5px" id="find-me">
+                <dt>Social Media</dt>
+              </h2>
+              <a
+                href="https://www.facebook.com/rafaeldeandrapradipta"
+                class="fa fa-facebook"
+              ></a>
+              <a
+                href="https://www.instagram.com/rafael.deandra"
+                class="fa fa-instagram"
+              ></a>
+              <a
+                href="https://twitter.com/rapaeldaendels"
+                class="fa fa-twitter"
+              ></a>
+              <a
+                href="https://www.twitch.tv/rafaeldeandra"
+                class="fa fa-twitch"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rafael-deandra-b13195228/"
+                class="fa fa-linkedin"
+              ></a>
+              <a href="https://github.com/Jinzyy" class="fa fa-github"></a>
+              <a
+                href="https://youtube.com/@rafaeldeandra"
+                class="fa fa-youtube"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="mt-5 p-4 bg-dark text-white text-center">
+          <div>
+            <p>
+              Rafael Deandra / 672021177 <br />
+              ©2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
